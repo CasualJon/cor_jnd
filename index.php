@@ -126,40 +126,38 @@
             <h3>Experiment Explanation</h3>
             <p>
               Hello, and thank you for agreeing to participate in this study on
-              human understanding of Machine Learning models.
+              the perception of correlation in visual data.
             </p>
             <p>
-              During this brief (5-8 minutes) experiment, please do not click
-              the back button on your browswer: it will not allow you to change
+              During this 10-15 minute experiment, <b><i>do not</i></b> click
+              the back button on your browser: it will not allow you to change
               your responses questions.
             </p>
 
             <p>
-              Here's what you can you can expect in the experiement:
+              Here's what you can you can expect in this experiement:
             </p>
-          </div> <!-- /column -->
-        </div> <!-- /row -->
-        <br />
 
-        <div class="row">
-          <div class="col-md-12">
             <ul>
-              <li>There are 2 trials in this experiment</li>
-              <li>In the first trial, you will be presented with 12 unique images</li>
-              <li>The main subject in each image is either a dog or a cat</li>
-
-              <br /><br /><br />
+              <li>
+                There is an educational round of 3 questions followed by a
+                trial in which you will respond to 21 questions
+              </li>
+              <li>
+                In each question, you will be presented with a pair of charts
+                like those below
+              </li>
+<!-- TODO: insert chart examples here -->
+              <br /><br />
+              <li style="color: yellow">
+                Your goal is to identify which of the two charts dispalys a
+                higher correlation value among its points
+              </li>
 
               <li>
-                For each image, select whether to classify the image yourself
-                (determine if it contains a dog or a cat) or to allow
-                a Machine Learning-trained model to classify the image
+                For each question, you will be asked to provide a measure of
+                confidence in your selection
               </li>
-              <li>Correct answers that <span style="color: #007BFF">YOU classify are worth 3 points</span></li>
-              <li>Correct answers that the <span style="color: #28A745">Machine Learning model classifies are worth 4 points</span></li>
-              <br />
-
-              <li>The Machine Learning model's overall accuracy is 75%</li>
             </ul>
           </div> <!-- /column -->
         </div> <!-- /row -->
@@ -175,7 +173,7 @@
 
         <h6 style="display: inline">Title of the Study: </h6><p>Human Understanding of Machine Learning Models</p>
         <h6 style="display: inline">Principal Investigator: </h6><p>Dr. Michael Gleicher (phone: (608) 263-2874)</p>
-        <h6 style="display: inline">Student Researcher: </h6><p>Jon Cyrus (lab phone (608) 265-2711)</p>
+        <h6 style="display: inline">Student Researcher: </h6><p>Alex Spicer (lab phone (608) 265-2711)</p>
 
         <p>
           <u>DESCRIPTION OF THE RESEARCH</u><br />
@@ -232,8 +230,8 @@
 
         <p>
           <u>WILL I BE COMPENSATED FOR MY PARTICIPATION?</u><br />
-          You will receive $1.00 for participating in this study. We expect the
-          study to take at most 10 minutes.
+          You will receive $1.50 for participating in this study. We expect the
+          study to take at most 15 minutes.
         </p>
 
         <p>
