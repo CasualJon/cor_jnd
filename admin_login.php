@@ -22,35 +22,8 @@
       <div class="row justify-content-center align-items-center">
         <div class="col-md-12">
           <h4>
-            If you arrived at this page...
+            Mistakes were made...
           </h4>
-          <p>
-            The website will launch to an administrative log-in page if the address
-            is typed/copy-pasted into the address bar, linked from elsewhere,
-            or <span style="color: yellow">you have the HTTP Referer Header turned
-            off in your browser settings</span>. The Referer Header is necessary to
-            make sure that survey access is directly from (and only from) worker.mturk.com.<br />
-            Without this, we cannot gaurantee compensation for participation, and
-            compensation to any participant is required.
-            <br /><br />
-            If you are are unsure about your HTTP Referer Header setting:
-          </p>
-          <ul>
-            <li>Firefox:</li>
-            <ul>
-              <li>Type <b><i>about:config</i></b> into your browser's address bar</li>
-              <li>It may launch a pop-up warning you to be careful with adjusting settings</li>
-              <li>In the search bar, type "referer" and the last entry should be "network.http.sendRefererHeader"</li>
-              <li>If the value is a 1 or a 2, you should be set</li>
-            </ul>
-            <li>Chrome:</li>
-            <ul>
-              <li>Type <b><i>chrome://flags</i></b> into the browser's address bar</li>
-              <li>This will bring up a page with a warning</li>
-              <li>In the search bar, type "referer" and the top entry should be a setting called "Reduce default 'referer' header granularity"</li>
-              <li>If the value is "disabled" you should be set</li>
-            </ul>
-          </ul>
           <div class="form">
             <form action="./php_includes/admin_verify.php" method="post" autocomplete="off">
               <h4>Admin Login</h4>
