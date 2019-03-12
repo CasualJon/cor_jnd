@@ -6,7 +6,7 @@
   $allowed_ext_refer = "worker.mturk.com";
 
   //Database informaiton for mysqli access
-  $db_name = "cor_jdc_1";
+  $db_name = "cor_jnd_1";
   $db_user = "phpmyadmin";
   $db_pass = "westdayton";
 

@@ -1,6 +1,6 @@
 <?php
   //****************************************************************************
-  //Assumes Informed Consent was obtained from the referring site, MTurk
+  //Assumes Informed Consent was obtained from the referring site
   //****************************************************************************
 
   //Session, control vars and database connection settings
