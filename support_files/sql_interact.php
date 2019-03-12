@@ -53,7 +53,7 @@
           $choice = 0;
           if ($_POST['arguments'][0] == "B") $choice++;
           $usr_correct = 0;
-          if (strpos($_SESSION['exp_data'][$_SESSION['survey']['curr_question']][$choice], "h") !== FALSE) $usr_correct++;
+          if (strpos($_SESSION['exp_data'][$_SESSION['survey']['curr_question']][$choice], "h") !== FALSE) $usr_correct += 1;
           $_SESSION['survey']['score'] += $usr_correct;
 
           //Set the response from the user
