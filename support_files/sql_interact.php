@@ -19,14 +19,8 @@
     switch ($_POST['functionname']) {
       case 'get_survey_control':
         $result['survey'] = $_SESSION['survey'];
-        $result['question_path'] = $img_source.$_SESSION['exp_data'][$_SESSION['survey']['curr_question']];
-        $result['sel_options'] = $user_sel_opt_name;
-
-        //POST[0] = post_intervention when the user has completed the intervention
-        if (strcmp($_POST['arguments'][0], 'post_intervention') == 0) {
-          $_SESSION['survey']['intervention_comp'] = true;
-          $_SESSION['survey']['mid_score'] = $_SESSION['survey']['score'];
-        }
+        $result['question_path'][0] = $img_source.$_SESSION['exp_data'][$_SESSION['survey']['curr_question']][0];
+        $result['question_path'][1] = $img_source.$_SESSION['exp_data'][$_SESSION['survey']['curr_question']][1];
 
         //If interventions are active, and we have not completed the intervention,
         //this is the case to handle starting with an intervention
@@ -55,40 +49,22 @@
 
         //Save the data of the user's response to the just-answered question
         if (!is_null($_POST['arguments']) && !empty($_POST['arguments'])) {
-          //Get the correctness of the response for ML Classification
-          $q_correct_char = substr($_SESSION['exp_data'][$_SESSION['survey']['curr_question']], $ml_indicator_index, 1);
-          $ml_correctness = intval($q_correct_char);
-          //Mod 2 to reduce... 0 == false, 1 == true
-          $ml_correctness = $ml_correctness % 2;
+          //Get the correctness of the response
+          $choice = 0;
+          if ($_POST['arguments'][0] == "B") $choice++;
+          $usr_correct = 0;
+          if (strpos($_SESSION['exp_data'][$_SESSION['survey']['curr_question']][$choice], "h") !== FALSE) $usr_correct++;
+          $_SESSION['survey']['score'] += $usr_correct;
 
-          //If ML scored (arguments[0] == 1), udpate score with correctness
-          if ($_POST['arguments'][0] == 1 && $ml_correctness) {
-            $_SESSION['survey']['score'] += $model_sel_points;
-          }
-          //If user scored (arguments[0] == 0), update score if their choice matches
-          $user_correctness = NULL;
-          if ($_POST['arguments'][0] == 0) {
-            $q_class_char = substr($_SESSION['exp_data'][$_SESSION['survey']['curr_question']], $user_class_index, 1);
-            $user_correctness = intval($q_class_char);
-            $user_correctness = $user_correctness % (sizeof($user_sel_opt_name));
-            $user_correctness = ($user_correctness == $_POST['arguments'][1]);
-            if ($user_correctness) {
-              $_SESSION['survey']['score'] += $user_sel_points;
-            }
-          }
-
-          $eval_method = "ML";
-          if ($_POST['arguments'][0] == 0) {
-            $eval_method = "USER";
-          }
           //Set the response from the user
           $response_val = array(
             'question#' => $_SESSION['survey']['curr_question'],
-            'quest_name' => $_SESSION['exp_data'][$_SESSION['survey']['curr_question']],
-            'correctness' => $ml_correctness,
-            'eval_method' => $eval_method,
-            'user_val' => $user_correctness
+            'A' => $_SESSION['exp_data'][$_SESSION['survey']['curr_question']][0],
+            'B' => $_SESSION['exp_data'][$_SESSION['survey']['curr_question']][1],
+            'correctness' => $usr_correct,
+            'confidence' => $_POST['arguments'][1],
           );
+
           array_push($_SESSION['survey']['response'], $response_val);
         }
 
@@ -108,8 +84,13 @@
 
         //Return the current survey data and question
         $result['survey'] = $_SESSION['survey'];
-        $result['question_path'] = $img_source.$_SESSION['exp_data'][$_SESSION['survey']['curr_question']];
-        $result['sel_options'] = $user_sel_opt_name;
+        $result['question_path'][0] = $img_source.$_SESSION['exp_data'][$_SESSION['survey']['curr_question']][0];
+        $result['question_path'][1] = $img_source.$_SESSION['exp_data'][$_SESSION['survey']['curr_question']][1];
+        break;
+
+      case 'education_example':
+        $result['next'] = "../../feedback".$_POST['arguments'][0].".php?sel=".$_POST['arguments'][1];
+        if ($_POST['arguments'][0] == 3) $_SESSION['survey']['intervention_comp'] = true;
         break;
 
       case 'file_demographics':

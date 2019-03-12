@@ -12,19 +12,18 @@
     $q1 = false;
     $q2 = false;
     $data = "".$_SESSION['internal_identifier'].",";
-    $data .= $_SESSION['survey']['mid_score'].",";
     $data .= $_SESSION['survey']['score'].",";
     for ($i = 0; $i < sizeof($_SESSION['survey']['response']); $i++) {
       $data .= $_SESSION['survey']['response'][$i]['question#'].",";
-      $data .= $_SESSION['survey']['response'][$i]['quest_name'].",";
+      $data .= $_SESSION['survey']['response'][$i]['A'].",";
+      $data .= $_SESSION['survey']['response'][$i]['B'].",";
       $data .= $_SESSION['survey']['response'][$i]['correctness'].",";
-      $data .= $_SESSION['survey']['response'][$i]['eval_method'].",";
-      $data .= $_SESSION['survey']['response'][$i]['user_val'].",";
+      $data .= $_SESSION['survey']['response'][$i]['confidence'].",";
     }
     $result_stmt = $mysqli->stmt_init();
-    $query = "INSERT INTO responses (internal_identifier, pre_intervention_score, total_score, response) VALUES(?, ?, ?, ?)";
+    $query = "INSERT INTO responses (internal_identifier, total_score, response) VALUES(?, ?, ?)";
     $result_stmt->prepare($query);
-    $result_stmt->bind_param("iiis", $_SESSION['internal_identifier'], $_SESSION['survey']['mid_score'], $_SESSION['survey']['score'], $data);
+    $result_stmt->bind_param("iis", $_SESSION['internal_identifier'], $_SESSION['survey']['score'], $data);
     $q1 = $result_stmt->execute();
     $result_stmt->close();
 
@@ -53,7 +52,7 @@
     <?php include './php_includes/favicon.html'; ?>
 
     <title>UW-Madison Graphics</title>
-    <?php include './assets/css/style.html'; ?>
+    <?php include './assets/css/styleOut.html'; ?>
   </head>
 
   <body>
@@ -70,19 +69,14 @@
         }
       ?>
       <div class="row">
-        <div class="col-md-8">
-          <h3><span id="question_title"></span></h3>
-        </div> <!-- /column -->
-        <div class="col-md-4">
-          <h3 class="text-right" id="score_space">Score: <span id="points_total">0</span></h3>
+        <div class="col-md-12">
+          <h3>Thank you!</h3>
         </div> <!-- /column -->
       </div> <!-- /row -->
       <hr />
 
       <div class="row">
         <div class="col-md-12">
-          <h3>Thank You!</h3>
-
           <p>
             We're grateful for your participation in this study. Your Amazon
             MTurk HIT Completion Code is below.

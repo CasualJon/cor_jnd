@@ -12,8 +12,8 @@ if (smallScr) location.replace("../../screen_issue.php");
 var beginButton = document.getElementById('begin_button');
 
 $(document).ready(function(){
-  //Enable the Begin Button automatically after 8 seconds (8,000ms)
-  setTimeout(enableBeginButton, 8000);
+  //Enable the Begin Button automatically after 7 seconds (7,000ms)
+  setTimeout(enableBeginButton, 7000);
 });
 
 

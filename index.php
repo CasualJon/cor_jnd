@@ -84,7 +84,7 @@
     <?php include './php_includes/favicon.html'; ?>
 
     <title>UW-Madison Graphics</title>
-    <?php include './assets/css/style.html'; ?>
+    <?php include './assets/css/styleIn.html'; ?>
   </head>
 
   <body>
@@ -147,8 +147,11 @@
                 In each question, you will be presented with a pair of charts
                 like those below
               </li>
-<!-- TODO: insert chart examples here -->
+              <img src="./assets/img/examples/intro_1.png" width="150"  style="display: inline"/>
+              &nbsp;&nbsp;
+              <img src="./assets/img/examples/intro_2.png" width="150" />
               <br /><br />
+
               <li style="color: yellow">
                 Your goal is to identify which of the two charts dispalys a
                 higher correlation value among its points

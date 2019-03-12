@@ -30,49 +30,53 @@ hr {
 
 /******************************************************************************/
 /* Labels and Inputs */
-label {
+.image-checkbox {
+	cursor: pointer;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	border: 6px solid transparent;
+	margin-bottom: 0;
+	outline: 0;
+}
+.image-checkbox input[type="checkbox"] {
+	display: none;
+}
+
+.image-checkbox-checked {
+	border-color: #0F82E6;
+}
+.image-checkbox .fa {
   position: absolute;
-  -webkit-transform: translateY(6px);
-          transform: translateY(6px);
-  left: 13px;
   color: #FFFFFF;
-  -webkit-transition: all 0.25s ease;
-  transition: all 0.25s ease;
-  -webkit-backface-visibility: hidden;
-  pointer-events: none;
-  font-size: 22px;
+  background-color: #0F82E6;
+  padding: 10px;
+  top: 0;
+  right: 0;
 }
-label.active {
-  -webkit-transform: translateY(50px);
-          transform: translateY(50px);
-  left: 2px;
-  font-size: 14px;
+.image-checkbox-checked .fa {
+  display: block !important;
 }
 
-label.highlight {
-  color: #FFFFFF;
-}
-
-input, textarea {
-  font-size: 22px;
-  display: block;
+.img-feedback {
+  padding: 0px;
+  position: relative;
+  text-align: center;
   width: 100%;
-  height: 100%;
-  padding: 5px 10px;
-  background: none;
-  background-image: none;
-  border: 2px solid #282728;
-  color: #FFFFFF;
-  border-radius: 0;
-  -webkit-transition: border-color .25s ease, box-shadow .25s ease;
-  transition: border-color .25s ease, box-shadow .25s ease;
 }
-input:focus, textarea:focus {
-  outline: 0;
-  border: 2px solid #FFFFFF;
+
+.img-feedback img {
+  opacity: 1;
 }
-select {
-  margin: 0 0 0 12px;
+
+.img-feedback .far {
+  opacity: 0.9;
+  bottom: 0px;
+  font-size: 140px;
+  left: 0px;
+  position: absolute;
+  text-align: center;
+  width: 100%;
 }
 
 .copy_code {
@@ -102,23 +106,6 @@ select {
 .admin-banner {
   background: rgba(197, 5, 12, 0.95);
   text-align: center;
-}
-
-/******************************************************************************/
-/* Experiment Acknowledgement Checkbox */
-.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
-  background-color: rgba(197, 5, 12, 0.95);
-}
-.consent_text {
-  font-size: 14px;
-  color: rgba(255, 255, 255, 0.5);
-}
-
-/******************************************************************************/
-/* Image Loading Spinner */
-.fa-spinner {
-  font-size: 24px;
-  color: #FFFFFF;
 }
 
 /******************************************************************************/
