@@ -22,8 +22,8 @@ var continueButton = document.getElementById('continue_button');
 
 //Make a file-wide var to hold the Begin Button element
 $(document).ready(function(){
-  //Require at least 6 seconds (6,000ms) of time on the education screen
-  setTimeout(completeTimer, 6000);
+  //Require at least 6 seconds (3,000ms) of time on the education screen
+  setTimeout(completeTimer, 3000);
 });
 
 //Update the view based on check input

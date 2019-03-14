@@ -123,48 +123,40 @@
         <!-- Begin experiment explanation -->
         <div class="row">
           <div class="col-md-12">
-            <h3>Experiment Explanation</h3>
+            <h3>Experiment Introduction</h3>
             <p>
-              Hello, and thank you for agreeing to participate in this study on
-              the perception of correlation in visual data.
-            </p>
+              The following experiment aims to assess people's perception of
+              correlation by presenting two scatter plots displaying 2 sets of
+              data (one for each scatter plot) each with a different level of
+              correlation.  Each plot will have 300 points, and the best fit line
+              for all groups of data can be described by the line y = x.  You will
+              need to select the graph in which you think the points are most
+              highly correlated.
+            </p><br>
+
+            <p>
+              Additionally, you will indicate your confidence in your selection
+              using a 7 level scale:<br>
+              <span class="semi_transp">
+                1 = Very Unsure  ....................
+                4 = Neutral ....................
+                7 = Very Sure
+              </span>
+            </p><br>
+
+            <p>
+              Before the experiment begins you will be given a definition of
+              correlation and 3 practice questions with feedback.
+            </p><br>
+
             <p>
               During this 10-15 minute experiment, <b><i>do not</i></b> click
               the back button on your browser: it will not allow you to change
               your responses questions.
             </p>
-
-            <p>
-              Here's what you can you can expect in this experiement:
-            </p>
-
-            <ul>
-              <li>
-                There is an educational round of 3 questions followed by a
-                trial in which you will respond to 21 questions
-              </li>
-              <li>
-                In each question, you will be presented with a pair of charts
-                like those below
-              </li>
-              <img src="./assets/img/examples/intro_1.png" width="150"  style="display: inline"/>
-              &nbsp;&nbsp;
-              <img src="./assets/img/examples/intro_2.png" width="150" />
-              <br /><br />
-
-              <li style="color: yellow">
-                Your goal is to identify which of the two charts dispalys a
-                higher correlation value among its points
-              </li>
-
-              <li>
-                For each question, you will be asked to provide a measure of
-                confidence in your selection
-              </li>
-            </ul>
           </div> <!-- /column -->
         </div> <!-- /row -->
-        <br />
+        <br /><br /><br /><br />
         <hr />
 
         <h3>UNIVERSITY OF WISCONSIN-MADISON</h3>
@@ -271,7 +263,7 @@
 
         <p>
           By clicking "Ready" you confirm that you meet the criteria for this study
-          and consent to participate. This will open up the study in a new window.
+          and consent to participate.
         </p>
 
         <div class="row">

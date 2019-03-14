@@ -42,24 +42,8 @@
 
       <div class="row">
         <div class="col-md-12">
-          <p>
-            In these first three examples, we'll provide some background
-            context about concepts you will be asked to explore in the experiment.
-          </p>
-          <br />
+          <br /><br />
 
-          <h4><u>Funny Business</u></h4>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-          <br />
           <h5>Select the chart that shows a higher correlation:</h5>
         </div> <!-- /column -->
       </div> <!-- /row -->
@@ -67,14 +51,14 @@
       <div class="row">
         <div class="col-md-6 text-center">
           <label class="image-checkbox" id="container_a">
-            <img src="./assets/img/examples/edu_2/C.png" id="edu_a"/>
+            <img src="./assets/img/examples/edu_2/xy_data_practice_xp2_yp2_scatter.png" id="edu_a"/>
             <input type="checkbox" id="check_a" name="image[]" value="" />
             <i class="fa fa-check" id="sel_a" hidden></i>
           </label>
         </div> <!-- /column -->
         <div class="col-md-6 text-center">
           <label class="image-checkbox" id="container_b">
-            <img src="./assets/img/examples/edu_2/D.png" id="edu_b"/>
+            <img src="./assets/img/examples/edu_2/xy_data_practice_xp2a_yp2a_scatter.png" id="edu_b"/>
             <input type="checkbox" id="check_b" name="image[]" value="" />
             <i class="fa fa-check" id="sel_b" hidden></i>
           </label>
@@ -85,8 +69,8 @@
       <div class="row">
         <div class="col-md-12 text-center">
           <p>
-            On a scale of 1 <small class="semi_transp">(not at all)</small> to
-            7 <small class="semi_transp">(very much)</small>, how confident
+            On a scale of 1 <small class="semi_transp">(very unsure)</small> to
+            7 <small class="semi_transp">(very sure)</small>, how confident
             are you that your choice is correct?
           </p>
           <div class="btn-group btn-group-lg">

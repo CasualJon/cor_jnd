@@ -4,7 +4,7 @@ html {
   overflow-y: scroll;
 }
 body {
-  background-color: #282728;
+  background-color: #FFFFFF;
   height: 100%;
   font-family: 'Gudea', sans-serif;
 
@@ -12,18 +12,18 @@ body {
   -webkit-overflow-scrolling: touch;
 }
 p, ul, ol {
-  color: #FFFFFF;
+  color: #000000;
   margin: 0px 0px 16px 0px;
   font-size: 18px;
 }
 h1, h2, h3, h4, h5, h6 {
-  color: #FFFFFF;
+  color: #000000;
 }
 hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid #FFFFFF;
+  border-top: 1px solid #000000;
   margin: 1em 0;
   padding: 0;
 }
@@ -86,40 +86,40 @@ hr {
 }
 
 .semi_transp {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(0, 0, 0, 0.5);
 }
 
 /******************************************************************************/
 /* Admin Login and Banner */
 .form {
-  background: rgba(197, 5, 12, 0.95);
+  background: rgba(197, 5, 12, 0.98);
   padding: 40px;
   max-width: 800px;
   margin: 40px auto;
   border-radius: 4px;
-  box-shadow: 7px 7px 10px 2px rgba(150, 5, 12, 0.95);
+  box-shadow: 7px 7px 10px 2px rgba(150, 5, 12, 0.98);
 }
 .field-wrap {
   position: relative;
   margin-bottom: 40px;
 }
 .admin-banner {
-  background: rgba(197, 5, 12, 0.95);
+  background: rgba(197, 5, 12, 0.98);
   text-align: center;
 }
 
 /******************************************************************************/
 /* BEGIN/CONTINUE Button */
 .btn-outline-danger {
-  color: #FFFFFF;
+  color: #000000;
   background-color: transparent;
   background-image: none;
-  border-color: #FFFFFF;
+  border-color: #000000;
 }
 .btn-outline-danger:not(:disabled):hover {
   color: #FFFFFF;
-  background-color: rgba(197, 5, 12, 0.95);
-  border-color: rgba(197, 5, 12, 0.95);
+  background-color: rgba(197, 5, 12, 0.98);
+  border-color: rgba(197, 5, 12, 0.98);
 }
 .btn-outline-danger:focus, .btn-outline-danger.focus {
   box-shadow: 0 0 0 0.2rem #FFFFFF;
@@ -132,10 +132,10 @@ hr {
 .btn-outline-danger:not(:disabled):not(.disabled):active, .btn-outline-danger:not(:disabled):not(.disabled).active,
 .show > .btn-outline-danger.dropdown-toggle {
   color: #FFFFFF;
-  background-color: rgba(197, 5, 12, 0.95);
-  border-color: rgba(197, 5, 12, 0.95);
+  background-color: rgba(197, 5, 12, 0.98);
+  border-color: rgba(197, 5, 12, 0.98);
 }
 .btn-outline-danger:not(:disabled):not(.disabled):active:focus, .btn-outline-danger:not(:disabled):not(.disabled).active:focus,
 .show > .btn-outline-danger.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem #FFFFFF;
+  box-shadow: 0 0 0 0.2rem #000000;
 }

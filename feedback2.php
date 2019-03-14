@@ -49,13 +49,13 @@
       <div class="row">
         <div class="col-md-6 text-center">
           <div class="img-feedback">
-            <img src="./assets/img/examples/edu_2/C.png" id="edu_a"/>
+            <img src="./assets/img/examples/edu_2/xy_data_practice_xp2_yp2_scatter.png" id="edu_a"/>
             <i class="far fa-times-circle" style="color: red"></i>
           </div>
         </div> <!-- /column -->
         <div class="col-md-6 text-center">
           <div class="img-feedback">
-            <img src="./assets/img/examples/edu_2/D.png" id="edu_b"/>
+            <img src="./assets/img/examples/edu_2/xy_data_practice_xp2a_yp2a_scatter.png" id="edu_b"/>
             <i class="far fa-check-circle" style="color: green"></i>
           </div>
         </div> <!-- /column -->
