@@ -91,8 +91,8 @@
           ?>
 
           <br /><br />
-          <p style="color: yellow">
-            After clicking Continue, you will proceed to the experiment trial.
+          <p style="color: DarkOrange">
+            <b>After clicking Continue, you will proceed to the experiment trial.</b>
           </p>
         </div> <!-- /column -->
       </div> <!-- /row -->

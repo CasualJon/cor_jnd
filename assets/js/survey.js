@@ -24,10 +24,14 @@ var continueButton = document.getElementById('continue_button');
 
 //Make a file-wide var to hold the Begin Button element
 $(document).ready(function(){
-  //Require at least 2 seconds (2,000ms) of time on the education screen
-  setTimeout(completeTimer, 2000);
+  //Require at least 4 seconds (4,000ms) of time on the education screen
+  setTimeout(completeTimer, 4000);
 });
 
+var seconds = 0;
+var interval = setInterval(function() {
+  document.getElementById('num_seconds').innerHTML = ++seconds;
+}, 1000);
 
 //Get the information to load onto the survey page from the server
 fetchSurveyControl();
@@ -85,7 +89,7 @@ $(".image-checkbox").on("click", function (e) {
   }
 
   e.preventDefault();
-  evalContinueButton();
+  evalConidentSelect();
 });
 
 //completeTimer()
@@ -93,6 +97,18 @@ function completeTimer() {
   timerDone = true;
   evalContinueButton()
 } //END completeTimer()
+
+//evalConidentSelect()
+function evalConidentSelect() {
+  var confidentSelect = document.getElementById("confident_select");
+  if (choiceMade) {
+    confidentSelect.setAttribute("style", "");
+  }
+  else {
+    confidentSelect.setAttribute("style", "display: none");
+  }
+  evalContinueButton();
+} //END evalConidentSelect()
 
 //setConfidence()
 function setConfidence(opt) {
@@ -111,8 +127,14 @@ function setConfidence(opt) {
 
 //evalContinueButton()
 function evalContinueButton() {
-  if (timerDone && choiceMade && confidenceSelected) continueButton.disabled = false;
-  else continueButton.disabled = true;
+  if (timerDone && choiceMade && confidenceSelected) {
+    continueButton.setAttribute("style", "");
+    continueButton.disabled = false;
+  }
+  else {
+    continueButton.setAttribute("style", "display: none");
+    continueButton.disabled = true;
+  }
 } //END evalContinueButton()
 
 
@@ -148,7 +170,6 @@ function fetchSurveyControl() {
 //renderNextQuestion()
 //Function that takes surveyControl object information to build
 function renderNextQuestion() {
-  //TODO - remove debug code
   console.log(surveyControl);
 
   //If survey responds that an intervention is next or the survey is completed,
@@ -180,7 +201,8 @@ function renderNextQuestion() {
 function executeUserSelection() {
   //Args: 0 - choice
   //      1 - confidence
-  var args = [choice, confidence];
+  //      2 - seconds in question
+  var args = [choice, confidence, seconds];
   jQuery.ajax({
     type:     "POST",
     url:      '../../support_files/sql_interact.php',

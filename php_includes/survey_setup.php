@@ -28,4 +28,5 @@
   }
 
   $_SESSION['exp_data'] = $exp_data;
+  $_SESSION['engagement'] = array(0, 0, 0);
 ?>

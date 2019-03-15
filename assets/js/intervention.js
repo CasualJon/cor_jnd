@@ -22,9 +22,15 @@ var continueButton = document.getElementById('continue_button');
 
 //Make a file-wide var to hold the Begin Button element
 $(document).ready(function(){
-  //Require at least 6 seconds (3,000ms) of time on the education screen
+  //Require at least 3 seconds (3,000ms) of time on the education screen
   setTimeout(completeTimer, 3000);
 });
+
+var seconds = 0;
+var interval = setInterval(function() {
+  document.getElementById('num_seconds').innerHTML = ++seconds;
+}, 1000);
+
 
 //Update the view based on check input
 $(".image-checkbox").on("click", function (e) {
@@ -78,7 +84,7 @@ $(".image-checkbox").on("click", function (e) {
   }
 
   e.preventDefault();
-  evalContinueButton();
+  evalConidentSelect();
 });
 
 //completeTimer()
@@ -86,6 +92,18 @@ function completeTimer() {
   timerDone = true;
   evalContinueButton()
 } //END completeTimer()
+
+//evalConidentSelect()
+function evalConidentSelect() {
+  var confidentSelect = document.getElementById("confident_select");
+  if (choiceMade) {
+    confidentSelect.setAttribute("style", "");
+  }
+  else {
+    confidentSelect.setAttribute("style", "display: none");
+  }
+  evalContinueButton();
+} //END evalConidentSelect()
 
 //setConfidence()
 function setConfidence(opt) {
@@ -104,8 +122,14 @@ function setConfidence(opt) {
 
 //evalContinueButton()
 function evalContinueButton() {
-  if (timerDone && choiceMade && confidenceSelected) continueButton.disabled = false;
-  else continueButton.disabled = true;
+  if (timerDone && choiceMade && confidenceSelected) {
+    continueButton.setAttribute("style", "");
+    continueButton.disabled = false;
+  }
+  else {
+    continueButton.setAttribute("style", "display: none");
+    continueButton.disabled = true;
+  }
 } //END evalContinueButton()
 
 

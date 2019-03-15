@@ -34,8 +34,13 @@
       ?>
 
       <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-10">
           <h3>Background #2 <span class="semi_transp">(of 3)</span></h3>
+        </div> <!-- /column -->
+        <div class="col-md-2">
+          <h3>
+            Seconds: <span class="semi_transp" id="num_seconds">0</span>
+          </h3>
         </div> <!-- /column -->
       </div> <!-- /row -->
       <hr />
@@ -67,7 +72,7 @@
       <br />
 
       <div class="row">
-        <div class="col-md-12 text-center">
+        <div class="col-md-12 text-center" id="confident_select" style="display: none">
           <p>
             On a scale of 1 <small class="semi_transp">(very unsure)</small> to
             7 <small class="semi_transp">(very sure)</small>, how confident
@@ -83,8 +88,12 @@
             <button type="button" class="btn" onclick="setConfidence(7)" id="conf7">7</button>
           </div>
           <br /><br />
+        </div> <!-- /column -->
+      </div> <!-- /row -->
 
-          <button class="btn btn-lg btn-outline-danger" onclick="executeUserSelection(2)" id="continue_button" disabled>
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <button class="btn btn-lg btn-outline-danger" onclick="executeUserSelection(2)" id="continue_button" style="display: none" disabled>
             <b style="font-size: 38px">Continue</b>
           </button>
         </div> <!-- /column -->

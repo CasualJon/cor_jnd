@@ -35,15 +35,15 @@
     $resultSet = $ip_stmt->get_result();
 
     //We've seen this IP Address before, so reject the user
-    if ($resultSet->num_rows > 0) {
-      $worker_data = $resultSet->fetch_assoc();
-      $resultSet->free();
-      $ip_stmt->close();
-      $_SESSION['message'] = "We're sorry, but you can only complete this HIT survey once. This IP Address completed the survey on ".$worker_data['visit_date'].".";
-      unset($ip_address, $query, $worker_data);
-      header("location: ./error.php");
-      exit;
-    }
+    // if ($resultSet->num_rows > 0) {
+    //   $worker_data = $resultSet->fetch_assoc();
+    //   $resultSet->free();
+    //   $ip_stmt->close();
+    //   $_SESSION['message'] = "We're sorry, but you can only complete this HIT survey once. This IP Address completed the survey on ".$worker_data['visit_date'].".";
+    //   unset($ip_address, $query, $worker_data);
+    //   header("location: ./error.php");
+    //   exit;
+    // }
 
     //Set worker data into the table
     $resultSet->free();
@@ -57,9 +57,10 @@
     $ip_stmt->execute();
 
     //Retrieve the interal identifier set into the worker table from last action
-    $query = "SELECT internal_identifier FROM workers WHERE ip_address=?";
+//TODO - remove start time check (used only for testing b/c IP addresses not unique)
+    $query = "SELECT internal_identifier FROM workers WHERE ip_address=? AND start_time=?";
     $ip_stmt->prepare($query);
-    $ip_stmt->bind_param("s", $ip_address);
+    $ip_stmt->bind_param("ss", $ip_address, $curr_time);
     $ip_stmt->execute();
     $resultSet = $ip_stmt->get_result();
     $internal_id = $resultSet->fetch_assoc();

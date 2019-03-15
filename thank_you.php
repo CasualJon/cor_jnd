@@ -11,7 +11,15 @@
   if (!isset($_SESSION['done']) && $_SESSION['admin'] != 1) {
     $q1 = false;
     $q2 = false;
+    $engaged = 0;
     $data = "".$_SESSION['internal_identifier'].",";
+    if ($_SESSION['engagement'][0] == 1 && $_SESSION['engagement'][1] == 1 && $_SESSION['engagement'][2] == 1) {
+      $engaged = 1;
+      $data .= "1,";
+    }
+    else {
+      $data .= "0,";
+    }
     $data .= $_SESSION['survey']['score'].",";
     for ($i = 0; $i < sizeof($_SESSION['survey']['response']); $i++) {
       $data .= $_SESSION['survey']['response'][$i]['question#'].",";
@@ -19,11 +27,12 @@
       $data .= $_SESSION['survey']['response'][$i]['B'].",";
       $data .= $_SESSION['survey']['response'][$i]['correctness'].",";
       $data .= $_SESSION['survey']['response'][$i]['confidence'].",";
+      $data .= $_SESSION['survey']['response'][$i]['seconds'].",";
     }
     $result_stmt = $mysqli->stmt_init();
-    $query = "INSERT INTO responses (internal_identifier, total_score, response) VALUES(?, ?, ?)";
+    $query = "INSERT INTO responses (internal_identifier, engaged, total_score, response) VALUES(?, ?, ?, ?)";
     $result_stmt->prepare($query);
-    $result_stmt->bind_param("iis", $_SESSION['internal_identifier'], $_SESSION['survey']['score'], $data);
+    $result_stmt->bind_param("iiis", $_SESSION['internal_identifier'], $engaged, $_SESSION['survey']['score'], $data);
     $q1 = $result_stmt->execute();
     $result_stmt->close();
 
@@ -148,7 +157,7 @@
       <div class="row">
         <div class="col-md-12">
           <h4>Amazon MTurk HIT Completion Code: </h4>
-          <input type="text" class="copy_code" id="hit_comp_code" value=<?php echo "\"".$hit_completion_code."\"" ?> />
+          <input type="text" class="copy_code" id="hit_comp_code" style="color: #000000" value=<?php echo "\"".$hit_completion_code."\"" ?> />
           <button type="button" class="btn" onclick="copyTextToClipboard()">Copy Code</button>
           <br /><br />
 
