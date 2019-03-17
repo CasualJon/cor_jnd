@@ -87,10 +87,14 @@
       <div class="row">
         <div class="col-md-12">
           <p>
-            We're grateful for your participation in this study. Your Amazon
-            MTurk HIT Completion Code is below.
+            We're grateful for your participation in this study!<br />
+            You correctly identified the plot with a higher correlation value in
+            <b><?php echo $_SESSION['survey']['score']; ?></b> of the <b>21</b>
+            examples. Please note that your MTurk payment is <u><i>not</i></u>
+            affected by the number in any way.
           </p>
           <p>
+            Your Amazon MTurk HIT Completion Code is below.<br />
             Please be aware that you can only participate in this study a single
             time. Subsequent attempts to work this HIT may jeopardize the
             validity of your completion code.
@@ -152,7 +156,7 @@
           </button>
         </div> <!-- /column -->
       </div> <!-- /row -->
-      <br />
+      <br /><br />
 
       <div class="row">
         <div class="col-md-12">

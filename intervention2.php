@@ -53,7 +53,7 @@
           </p>
           <br /><br />
 
-          <h5>Select the visualization that appears to have the larger correlation:</h5>
+          <h5>Click on the visualization that appears to have the larger correlation:</h5>
         </div> <!-- /column -->
       </div> <!-- /row -->
 

@@ -54,6 +54,27 @@
           <br />
 
           <h4><u>What is Correlation?</u></h4>
+          <p>
+            Correlation is a statistical measure that describes whether and to
+            what degree pairs of variables (X,Y) are related. More specifically,
+            correlation illustrates the magnitude of the <u><i>linear</i></u>
+            relationship between two continuous variables. Correlation can range
+            from -1 (perfect negative linear relationship) to 1 (perfect positive
+            relationship) with 0 indicating no linear relationship.
+            Note however that a correlation of or close to 0 does not necessarily
+            mean X and Y are not related but only indicates they are not
+            <u><i>linearly</i></u> related.
+          </p>
+          <p>
+            Here, your variables are demonstrated by the 2 axes of the of the
+            chart: the horizontal (X) and the vertical (Y). All variable pairs
+            in this experiment have correlations from 0 to 1 (no negative
+            correlations). Higher correlation means that there is a stronger link
+            between the horizontal and the vertical values of individual points.
+            A point with a lower horizontal value will generally have a lower
+            vertical value if the variables are strongly correlated. Similarly,
+            as one variable increases, so should the other.
+          </p>
           <!-- <p>
             The magnitude of Cor(X,Y) measures the strength of the linear relationship
             between X and Y. You can calculate correlation using the following
@@ -74,7 +95,7 @@
             Cor(X,Y) = 0 does not necessarily mean Y and X are not related but
             only indicates they are not linearly related.
           </p> -->
-          <p>
+          <!-- <p>
             Correlation is a relationship between two or more things. As a
             technique in statistics, correlation can can show whether -
             and how strongly - pairs of variables are related. For example,
@@ -88,9 +109,9 @@
             values of individual points. A point with a lower horizontal value
             will generally have a lower vertical value if the variables are strongly
             correlated. Similarly, as one variable increases, so should the other.
-          </p>
+          </p> -->
           <br />
-          <h5>Select the visualization that appears to have the larger correlation:</h5>
+          <h5>Click on the visualization that appears to have the larger correlation:</h5>
         </div> <!-- /column -->
       </div> <!-- /row -->
 

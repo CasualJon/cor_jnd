@@ -70,7 +70,7 @@
       <!-- Survey question data -->
       <div class="row">
         <div class="col-md-12">
-          <h5>Select the chart that shows a higher correlation:</h5>
+          <h5>Click on the chart that shows a higher correlation:</h5>
         </div> <!-- /column -->
       </div> <!-- /row -->
       <div class="row">
