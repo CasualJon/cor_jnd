@@ -35,7 +35,7 @@
 
       <div class="row">
         <div class="col-md-10">
-          <h3>Background #3 <span class="semi_transp">(of 3)</span></h3>
+          <h3>Practice #3 <span class="semi_transp">(of 3)</span></h3>
         </div> <!-- /column -->
         <div class="col-md-2">
           <h3>
@@ -48,19 +48,19 @@
       <div class="row">
         <div class="col-md-12">
           <p>
-            In these first three examples, we'll provide some background
-            context about concepts you will be asked to explore in the experiment.
+            This example is less correlated than the last, but still less
+            challenging than some examples in the  actual experiment.
           </p>
-          <br />
+          <br /><br />
 
-          <h5>Select the chart that shows a higher correlation:</h5>
+          <h5>Select the visualization that appears to have the larger correlation:</h5>
         </div> <!-- /column -->
       </div> <!-- /row -->
 
       <div class="row">
         <div class="col-md-6 text-center">
           <label class="image-checkbox" id="container_a">
-            <img src="./assets/img/examples/edu_3/xy_data_practice_xp3a_yp3a_scatter.png" id="edu_a"/>
+            <img src="./assets/img/examples/edu_3/xy_data_practice_xp3h_yp3h_scatter.png" id="edu_a"/>
             <input type="checkbox" id="check_a" name="image[]" value="" />
             <i class="fa fa-check" id="sel_a" hidden></i>
           </label>

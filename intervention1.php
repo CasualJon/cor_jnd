@@ -35,7 +35,7 @@
 
       <div class="row">
         <div class="col-md-10">
-          <h3>Background #1 <span class="semi_transp">(of 3)</span></h3>
+          <h3>Practice #1 <span class="semi_transp">(of 3)</span></h3>
         </div> <!-- /column -->
         <div class="col-md-2">
           <h3>
@@ -48,13 +48,13 @@
       <div class="row">
         <div class="col-md-12">
           <p>
-            In these first three examples, we'll provide some background
-            context about concepts you will be asked to explore in the experiment.
+            In these first three examples, we'll explore some background
+            context about the concept of correlation.
           </p>
           <br />
 
-          <h4><u>Correlation Definition</u></h4>
-          <p>
+          <h4><u>What is Correlation?</u></h4>
+          <!-- <p>
             The magnitude of Cor(X,Y) measures the strength of the linear relationship
             between X and Y. You can calculate correlation using the following
             equation (note that this is not required for the experiment but only
@@ -73,9 +73,10 @@
             between Y and X the closer |Cor(X,Y)| to 1.  Note, however, that
             Cor(X,Y) = 0 does not necessarily mean Y and X are not related but
             only indicates they are not linearly related.
-          </p>
-          <!-- <p>
-            Correlation is a statistical technique that can show whether -
+          </p> -->
+          <p>
+            Correlation is a relationship between two or more things. As a
+            technique in statistics, correlation can can show whether -
             and how strongly - pairs of variables are related. For example,
             height and weight are related in that taller people tend to be
             heavier than shorter people.
@@ -83,10 +84,13 @@
           <p>
             Here, your variables are demonstrated by the 2 axes of the of the
             chart: the horizontal and the vertical. Higher correlation means
-            that as one increases, so should the other.
-          </p> -->
+            that there is a stronger link between the horizontal and the vertical
+            values of individual points. A point with a lower horizontal value
+            will generally have a lower vertical value if the variables are strongly
+            correlated. Similarly, as one variable increases, so should the other.
+          </p>
           <br />
-          <h5>Select the chart that shows a higher correlation:</h5>
+          <h5>Select the visualization that appears to have the larger correlation:</h5>
         </div> <!-- /column -->
       </div> <!-- /row -->
 
@@ -100,7 +104,7 @@
         </div> <!-- /column -->
         <div class="col-md-6 text-center">
           <label class="image-checkbox" id="container_b">
-            <img src="./assets/img/examples/edu_1/xy_data_practice_xp1a_yp1a_scatter.png" id="edu_b"/>
+            <img src="./assets/img/examples/edu_1/xy_data_practice_xp1h_yp1h_scatter.png" id="edu_b"/>
             <input type="checkbox" id="check_b" name="image[]" value="" />
             <i class="fa fa-check" id="sel_b" hidden></i>
           </label>

@@ -42,14 +42,14 @@
 
       <div class="row">
         <div class="col-md-12">
-          <h4><u>Funny Business</u></h4>
+          <h4><u>Correlation</u></h4>
         </div> <!-- /column -->
       </div> <!-- /row -->
 
       <div class="row">
         <div class="col-md-6 text-center">
           <div class="img-feedback">
-            <img src="./assets/img/examples/edu_3/xy_data_practice_xp3a_yp3a_scatter.png" id="edu_a"/>
+            <img src="./assets/img/examples/edu_3/xy_data_practice_xp3h_yp3h_scatter.png" id="edu_a"/>
             <i class="far fa-check-circle" style="color: green"></i>
           </div>
         </div> <!-- /column -->
@@ -65,15 +65,12 @@
       <div class="row">
         <div class="col-md-12">
           <?php
-            //B was the correct option for Background Question 1
+            //A was the correct option for Background Question 3
             if ($_GET['sel'] == "A") {
               echo '
                 <h4>Nice work!</h4>
                 <p>
-                  You are correct. Details details, buzz buzz.
-                </p>
-                <p>
-                  Some distillation of the point.
+                  You are correct.
                 </p>
               ';
             }
@@ -81,10 +78,11 @@
               echo '
                 <h4>Not quite.</h4>
                 <p>
-                  Here is some detail about the point.
-                </p>
-                <p>
-                  Some distillation of the point.
+                  Remember that data which is <i>more correlated</i> will
+                  resemble a straight line at a 45-degree angle from the bottom
+                  left. So, even if two plots have an overall trend moving from
+                  bottom left to top right, a higher correlation value will be
+                  more tightly packed and try to span corner-to-corner.
                 </p>
               ';
             }

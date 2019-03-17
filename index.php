@@ -127,7 +127,7 @@
             <h3>Experiment Introduction</h3>
             <p>
               The following experiment aims to assess people's perception of
-              correlation by presenting two scatter plots displaying 2 sets of
+              correlation by presenting scatter plots displaying 2 sets of
               data (one for each scatter plot) each with a different level of
               correlation.  Each plot will have 300 points, and the best fit line
               for all groups of data can be described by the line y = x.  You will

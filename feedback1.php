@@ -55,7 +55,7 @@
         </div> <!-- /column -->
         <div class="col-md-6 text-center">
           <div class="img-feedback">
-            <img src="./assets/img/examples/edu_1/xy_data_practice_xp1a_yp1a_scatter.png" id="edu_b"/>
+            <img src="./assets/img/examples/edu_1/xy_data_practice_xp1h_yp1h_scatter.png" id="edu_b"/>
             <i class="far fa-check-circle" style="color: green"></i>
           </div>
         </div> <!-- /column -->
@@ -70,14 +70,15 @@
               echo '
                 <h4>Nice work!</h4>
                 <p>
-                  You are correct. For a point on the chart to show a strong
-                  correlation between its two variables, you can expect that as
-                  its value increases horizontally (moves to the right), it will
-                  also increase vertically (moves up).
+                  You are correct. In a plot of data that has
+                  high correlation between two variables, you can expect that
+                  as the horizontal value increases (moves to the right) for a
+                  data point, its vertical value will also increase (move up).
                 </p>
                 <p>
-                  So, a chart with points showing a strong correlation value will
-                  have a trend moving from bottom left to the upper right.
+                  So, a 2-dimensional plot of points showing a strong correlation
+                  value will have a general trend moving from bottom left to upper
+                  right and begin to resemble a straight line at a 45-degree angle.
                 </p>
               ';
             }
@@ -85,14 +86,15 @@
               echo '
                 <h4>Not quite.</h4>
                 <p>
-                  For a point on the chart to show a strong
-                  correlation between its two variables, you can expect that as
-                  its value increases horizontally (moves to the right), it will
-                  also increase vertically (moves up).
+                  In a plot of data that has
+                  high correlation between two variables, you can expect that
+                  as the horizontal value increases (moves to the right) for a
+                  data point, its vertical value will also increase (move up).
                 </p>
                 <p>
-                  So, a chart with points showing a strong correlation will
-                  have a trend moving from bottom left to the upper right.
+                  So, a 2-dimensional plot of points showing a strong correlation
+                  value will have a general trend moving from bottom left to upper
+                  right and begin to resemble a straight line at a 45-degree angle.
                 </p>
               ';
             }
