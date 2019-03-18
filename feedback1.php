@@ -35,7 +35,7 @@
 
       <div class="row">
         <div class="col-md-12">
-          <h3>Feedback #1 <span class="semi_transp">(of 3)</span></h3>
+          <h3>Feedback #1 <span class="semi_transp">(of 5)</span></h3>
         </div> <!-- /column -->
       </div> <!-- /row -->
       <hr />
@@ -55,7 +55,7 @@
         </div> <!-- /column -->
         <div class="col-md-6 text-center">
           <div class="img-feedback">
-            <img src="./assets/img/examples/edu_1/xy_data_practice_xp1h_yp1h_scatter.png" id="edu_b"/>
+            <img src="./assets/img/examples/edu_1/xy_data_practice_xp1a_yp1a_scatter.png" id="edu_b"/>
             <i class="far fa-check-circle" style="color: green"></i>
           </div>
         </div> <!-- /column -->
@@ -80,6 +80,10 @@
                   value will have a general trend moving from bottom left to upper
                   right and begin to resemble a straight line at a 45-degree angle.
                 </p>
+                <p>
+                  Here, the plot on the left has a correlation of 0.3 while the
+                  plot on the left has a correlation of 0.8.
+                </p>
               ';
             }
             else {
@@ -95,6 +99,10 @@
                   So, a 2-dimensional plot of points showing a strong correlation
                   value will have a general trend moving from bottom left to upper
                   right and begin to resemble a straight line at a 45-degree angle.
+                </p>
+                <p>
+                  Here, the plot on the left has a correlation of 0.3 while the
+                  plot on the left has a correlation of 0.8.
                 </p>
               ';
             }

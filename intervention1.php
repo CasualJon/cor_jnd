@@ -35,7 +35,7 @@
 
       <div class="row">
         <div class="col-md-10">
-          <h3>Practice #1 <span class="semi_transp">(of 3)</span></h3>
+          <h3>Practice #1 <span class="semi_transp">(of 5)</span></h3>
         </div> <!-- /column -->
         <div class="col-md-2">
           <h3>
@@ -48,7 +48,7 @@
       <div class="row">
         <div class="col-md-12">
           <p>
-            In these first three examples, we'll explore some background
+            In these first five examples, we'll explore some background
             context about the concept of correlation.
           </p>
           <br />
@@ -125,7 +125,7 @@
         </div> <!-- /column -->
         <div class="col-md-6 text-center">
           <label class="image-checkbox" id="container_b">
-            <img src="./assets/img/examples/edu_1/xy_data_practice_xp1h_yp1h_scatter.png" id="edu_b"/>
+            <img src="./assets/img/examples/edu_1/xy_data_practice_xp1a_yp1a_scatter.png" id="edu_b"/>
             <input type="checkbox" id="check_b" name="image[]" value="" />
             <i class="fa fa-check" id="sel_b" hidden></i>
           </label>

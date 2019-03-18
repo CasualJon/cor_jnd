@@ -35,7 +35,7 @@
 
       <div class="row">
         <div class="col-md-12">
-          <h3>Feedback #2 <span class="semi_transp">(of 5)</span></h3>
+          <h3>Feedback #4 <span class="semi_transp">(of 5)</span></h3>
         </div> <!-- /column -->
       </div> <!-- /row -->
       <hr />
@@ -49,14 +49,14 @@
       <div class="row">
         <div class="col-md-6 text-center">
           <div class="img-feedback">
-            <img src="./assets/img/examples/edu_2/xy_data_practice_xp2_yp2_scatter.png" id="edu_a"/>
-            <i class="far fa-times-circle" style="color: red"></i>
+            <img src="./assets/img/examples/edu_4/xy_data_practice_xp4a_yp4a_scatter.png" id="edu_a"/>
+            <i class="far fa-check-circle" style="color: green"></i>
           </div>
         </div> <!-- /column -->
         <div class="col-md-6 text-center">
           <div class="img-feedback">
-            <img src="./assets/img/examples/edu_2/xy_data_practice_xp2a_yp2a_scatter.png" id="edu_b"/>
-            <i class="far fa-check-circle" style="color: green"></i>
+            <img src="./assets/img/examples/edu_4/xy_data_practice_xp4_yp4_scatter.png" id="edu_b"/>
+            <i class="far fa-times-circle" style="color: red"></i>
           </div>
         </div> <!-- /column -->
       </div> <!-- /row -->
@@ -65,16 +65,16 @@
       <div class="row">
         <div class="col-md-12">
           <?php
-            //B was the correct option for Background Question 2
-            if ($_GET['sel'] == "B") {
+            //A was the correct option for Background Question 3
+            if ($_GET['sel'] == "A") {
               echo '
                 <h4>Nice work!</h4>
                 <p>
                   You are correct.
                 </p>
                 <p>
-                  Here, the plot on the left has a correlation of 0.3 while the
-                  plot on the left has a correlation of 0.7.
+                  Here, the plot on the left has a correlation of 0.5 while the
+                  plot on the left has a correlation of 0.3.
                 </p>
               ';
             }
@@ -83,13 +83,14 @@
                 <h4>Not quite.</h4>
                 <p>
                   Remember that data which is <i>more correlated</i> will
-                  resemble a straight line. So, even if two plots have an overall
-                  trend moving from bottom left to top right, a higher correlation
-                  value will be more tightly packed.
+                  resemble a straight line at a 45-degree angle from the bottom
+                  left. So, even if two plots have an overall trend moving from
+                  bottom left to top right, a higher correlation value will be
+                  more tightly packed and try to span corner-to-corner.
                 </p>
                 <p>
-                  Here, the plot on the left has a correlation of 0.3 while the
-                  plot on the left has a correlation of 0.7.
+                  Here, the plot on the left has a correlation of 0.5 while the
+                  plot on the left has a correlation of 0.3.
                 </p>
               ';
             }
@@ -100,7 +101,7 @@
 
       <div class="row">
         <div class="col-md-12 text-center">
-          <button class="btn btn-lg btn-outline-danger" onclick="executeUserSelection(3)" id="continue_button" disabled>
+          <button class="btn btn-lg btn-outline-danger" onclick="executeUserSelection(5)" id="continue_button" disabled>
             <b style="font-size: 38px">Continue</b>
           </button>
         </div> <!-- /column -->

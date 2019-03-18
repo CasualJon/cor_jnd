@@ -36,7 +36,7 @@ function evalContinueButton() {
 //executeUserSelection()
 function executeUserSelection(num) {
   var next = "";
-  if (num == 4) next = "../../survey.php";
+  if (num == 6) next = "../../survey.php";
   else next = "../../intervention" + num + ".php";
   location.replace(next);
 } //End executeUserSelection()

@@ -99,7 +99,7 @@
 
       case 'education_example':
         $result['next'] = "../../feedback".$_POST['arguments'][0].".php?sel=".$_POST['arguments'][1];
-        if ($_POST['arguments'][0] == 3) $_SESSION['survey']['intervention_comp'] = true;
+        if ($_POST['arguments'][0] == 5) $_SESSION['survey']['intervention_comp'] = true;
         break;
 
       case 'file_demographics':

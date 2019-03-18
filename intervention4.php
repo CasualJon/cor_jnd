@@ -35,7 +35,7 @@
 
       <div class="row">
         <div class="col-md-10">
-          <h3>Practice #3 <span class="semi_transp">(of 5)</span></h3>
+          <h3>Practice #4 <span class="semi_transp">(of 5)</span></h3>
         </div> <!-- /column -->
         <div class="col-md-2">
           <h3>
@@ -49,7 +49,7 @@
         <div class="col-md-12">
           <p>
             This example is less correlated than the last, but still less
-            challenging than some examples in the actual experiment.
+            challenging than some examples in the  actual experiment.
           </p>
           <br /><br />
 
@@ -60,14 +60,14 @@
       <div class="row">
         <div class="col-md-6 text-center">
           <label class="image-checkbox" id="container_a">
-            <img src="./assets/img/examples/edu_3/xy_data_practice_xp3a_yp3a_scatter.png" id="edu_a"/>
+            <img src="./assets/img/examples/edu_4/xy_data_practice_xp4a_yp4a_scatter.png" id="edu_a"/>
             <input type="checkbox" id="check_a" name="image[]" value="" />
             <i class="fa fa-check" id="sel_a" hidden></i>
           </label>
         </div> <!-- /column -->
         <div class="col-md-6 text-center">
           <label class="image-checkbox" id="container_b">
-            <img src="./assets/img/examples/edu_3/xy_data_practice_xp3_yp3_scatter.png" id="edu_b"/>
+            <img src="./assets/img/examples/edu_4/xy_data_practice_xp4_yp4_scatter.png" id="edu_b"/>
             <input type="checkbox" id="check_b" name="image[]" value="" />
             <i class="fa fa-check" id="sel_b" hidden></i>
           </label>
@@ -97,7 +97,7 @@
 
       <div class="row">
         <div class="col-md-12 text-center">
-          <button class="btn btn-lg btn-outline-danger" onclick="executeUserSelection(3)" id="continue_button" style="display: none" disabled>
+          <button class="btn btn-lg btn-outline-danger" onclick="executeUserSelection(4)" id="continue_button" style="display: none" disabled>
             <b style="font-size: 38px">Continue</b>
           </button>
         </div> <!-- /column -->

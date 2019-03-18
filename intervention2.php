@@ -35,7 +35,7 @@
 
       <div class="row">
         <div class="col-md-10">
-          <h3>Practice #2 <span class="semi_transp">(of 3)</span></h3>
+          <h3>Practice #2 <span class="semi_transp">(of 5)</span></h3>
         </div> <!-- /column -->
         <div class="col-md-2">
           <h3>
@@ -48,8 +48,9 @@
       <div class="row">
         <div class="col-md-12">
           <p>
-            Not all of the rounds in the experiment will exihibit high correlation.
-            This example is a little more spread out than the first.
+            Not all of the rounds in this experiment will have plots that
+            exihibit high correlation. The more correlated plot in this example
+            is a little more spread out than the first.
           </p>
           <br /><br />
 
@@ -67,7 +68,7 @@
         </div> <!-- /column -->
         <div class="col-md-6 text-center">
           <label class="image-checkbox" id="container_b">
-            <img src="./assets/img/examples/edu_2/xy_data_practice_xp2h_yp2h_scatter.png" id="edu_b"/>
+            <img src="./assets/img/examples/edu_2/xy_data_practice_xp2a_yp2a_scatter.png" id="edu_b"/>
             <input type="checkbox" id="check_b" name="image[]" value="" />
             <i class="fa fa-check" id="sel_b" hidden></i>
           </label>

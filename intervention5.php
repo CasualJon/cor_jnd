@@ -35,7 +35,7 @@
 
       <div class="row">
         <div class="col-md-10">
-          <h3>Practice #3 <span class="semi_transp">(of 5)</span></h3>
+          <h3>Practice #5 <span class="semi_transp">(of 5)</span></h3>
         </div> <!-- /column -->
         <div class="col-md-2">
           <h3>
@@ -48,8 +48,9 @@
       <div class="row">
         <div class="col-md-12">
           <p>
-            This example is less correlated than the last, but still less
-            challenging than some examples in the actual experiment.
+            Some of the plots in the experiment can become quite difficult. Here,
+            there is only a difference of 0.1 in the correlation value between the
+            two plots.
           </p>
           <br /><br />
 
@@ -60,14 +61,14 @@
       <div class="row">
         <div class="col-md-6 text-center">
           <label class="image-checkbox" id="container_a">
-            <img src="./assets/img/examples/edu_3/xy_data_practice_xp3a_yp3a_scatter.png" id="edu_a"/>
+            <img src="./assets/img/examples/edu_5/xy_data_practice_xp5a_yp5a_scatter.png" id="edu_a"/>
             <input type="checkbox" id="check_a" name="image[]" value="" />
             <i class="fa fa-check" id="sel_a" hidden></i>
           </label>
         </div> <!-- /column -->
         <div class="col-md-6 text-center">
           <label class="image-checkbox" id="container_b">
-            <img src="./assets/img/examples/edu_3/xy_data_practice_xp3_yp3_scatter.png" id="edu_b"/>
+            <img src="./assets/img/examples/edu_5/xy_data_practice_xp5_yp5_scatter.png" id="edu_b"/>
             <input type="checkbox" id="check_b" name="image[]" value="" />
             <i class="fa fa-check" id="sel_b" hidden></i>
           </label>
@@ -97,7 +98,7 @@
 
       <div class="row">
         <div class="col-md-12 text-center">
-          <button class="btn btn-lg btn-outline-danger" onclick="executeUserSelection(3)" id="continue_button" style="display: none" disabled>
+          <button class="btn btn-lg btn-outline-danger" onclick="executeUserSelection(5)" id="continue_button" style="display: none" disabled>
             <b style="font-size: 38px">Continue</b>
           </button>
         </div> <!-- /column -->

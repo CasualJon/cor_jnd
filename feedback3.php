@@ -35,7 +35,7 @@
 
       <div class="row">
         <div class="col-md-12">
-          <h3>Feedback #3 <span class="semi_transp">(of 3)</span></h3>
+          <h3>Feedback #3 <span class="semi_transp">(of 5)</span></h3>
         </div> <!-- /column -->
       </div> <!-- /row -->
       <hr />
@@ -49,7 +49,7 @@
       <div class="row">
         <div class="col-md-6 text-center">
           <div class="img-feedback">
-            <img src="./assets/img/examples/edu_3/xy_data_practice_xp3h_yp3h_scatter.png" id="edu_a"/>
+            <img src="./assets/img/examples/edu_3/xy_data_practice_xp3a_yp3a_scatter.png" id="edu_a"/>
             <i class="far fa-check-circle" style="color: green"></i>
           </div>
         </div> <!-- /column -->
@@ -72,6 +72,10 @@
                 <p>
                   You are correct.
                 </p>
+                <p>
+                  Here, the plot on the left has a correlation of 0.6 while the
+                  plot on the left has a correlation of 0.3.
+                </p>
               ';
             }
             else {
@@ -84,14 +88,13 @@
                   bottom left to top right, a higher correlation value will be
                   more tightly packed and try to span corner-to-corner.
                 </p>
+                <p>
+                  Here, the plot on the left has a correlation of 0.6 while the
+                  plot on the left has a correlation of 0.3.
+                </p>
               ';
             }
           ?>
-
-          <br /><br />
-          <p style="color: DarkOrange">
-            <b>After clicking Continue, you will proceed to the experiment trial.</b>
-          </p>
         </div> <!-- /column -->
       </div> <!-- /row -->
       <br /><br />
