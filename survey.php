@@ -56,7 +56,7 @@
         <div class="col-md-10">
           <h3>
             <span id="question_title"></span>
-            <span class="semi_transp">(of 21)</span>
+            <span class="semi_transp">(of 27)</span>
           </h3>
         </div> <!-- /column -->
         <div class="col-md-2">

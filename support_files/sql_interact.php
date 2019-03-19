@@ -69,8 +69,8 @@
           array_push($_SESSION['survey']['response'], $response_val);
 
           //Check if engagement question, file response to field if so
-          if (strpos($_SESSION['exp_data'][$_SESSION['survey']['curr_question']][$choice], "7_") !== FALSE ||
-              strpos($_SESSION['exp_data'][$_SESSION['survey']['curr_question']][$choice], "7h") !== FALSE) {
+          if (strpos($_SESSION['exp_data'][$_SESSION['survey']['curr_question']][$choice], "9_") !== FALSE ||
+              strpos($_SESSION['exp_data'][$_SESSION['survey']['curr_question']][$choice], "9h") !== FALSE) {
             if (strpos($_SESSION['exp_data'][$_SESSION['survey']['curr_question']][$choice], "_x1") !== FALSE) $_SESSION['engagement'][0] = $usr_correct;
             else if (strpos($_SESSION['exp_data'][$_SESSION['survey']['curr_question']][$choice], "_x2") !== FALSE) $_SESSION['engagement'][1] = $usr_correct;
             else $_SESSION['engagement'][2] = $usr_correct;

@@ -89,7 +89,7 @@
           <p>
             We're grateful for your participation in this study!<br />
             You correctly identified the plot with a higher correlation value in
-            <b><?php echo $_SESSION['survey']['score']; ?></b> of the <b>21</b>
+            <b><?php echo $_SESSION['survey']['score']; ?></b> of the <b>27</b>
             examples. Please note that your MTurk payment is <u><i>not</i></u>
             affected by the number in any way.
           </p>

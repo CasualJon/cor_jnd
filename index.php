@@ -147,7 +147,7 @@
 
             <p>
               Before the experiment begins you will be given a definition of
-              correlation and 3 practice questions with feedback.
+              correlation and 5 practice questions with feedback.
             </p><br>
 
             <p>
