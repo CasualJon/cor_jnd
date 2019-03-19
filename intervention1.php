@@ -55,7 +55,7 @@
 
           <h4><u>What is Correlation?</u></h4>
           <p>
-            Correlation is a statistical measure that describes whether and to
+            Correlation is a statistical measure that describes if and to
             what degree pairs of variables (X,Y) are related. More specifically,
             correlation illustrates the magnitude of the <u><i>linear</i></u>
             relationship between two continuous variables. Correlation can range
