@@ -18,6 +18,6 @@
   $intervention_trigger = true;
   $intervention_count = 0;
 
-  //Max allowable survey time in seconds (3600 = 90 min)
+  //Max allowable survey time in seconds (3600 = 60 min)
   $max_allowed_time = 3600;
 ?>
