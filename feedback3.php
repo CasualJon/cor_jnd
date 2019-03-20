@@ -74,7 +74,7 @@
                 </p>
                 <p>
                   Here, the plot on the left has a correlation of 0.6 while the
-                  plot on the left has a correlation of 0.3.
+                  plot on the right has a correlation of 0.3.
                 </p>
               ';
             }
@@ -90,7 +90,7 @@
                 </p>
                 <p>
                   Here, the plot on the left has a correlation of 0.6 while the
-                  plot on the left has a correlation of 0.3.
+                  plot on the right has a correlation of 0.3.
                 </p>
               ';
             }

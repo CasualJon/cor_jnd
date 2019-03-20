@@ -152,7 +152,7 @@
 
             <p>
               During this 10-15 minute experiment, <b><i>do not</i></b> click
-              the back button on your browser: it will not allow you to change
+              the back button on your browser - it will not allow you to change
               your responses questions.
             </p>
           </div> <!-- /column -->
