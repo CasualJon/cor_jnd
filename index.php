@@ -35,15 +35,15 @@
     $resultSet = $ip_stmt->get_result();
 
     //We've seen this IP Address before, so reject the user
-    // if ($resultSet->num_rows > 0) {
-    //   $worker_data = $resultSet->fetch_assoc();
-    //   $resultSet->free();
-    //   $ip_stmt->close();
-    //   $_SESSION['message'] = "We're sorry, but you can only complete this HIT survey once. This IP Address completed the survey on ".$worker_data['visit_date'].".";
-    //   unset($ip_address, $query, $worker_data);
-    //   header("location: ./error.php");
-    //   exit;
-    // }
+    if ($resultSet->num_rows > 0) {
+      $worker_data = $resultSet->fetch_assoc();
+      $resultSet->free();
+      $ip_stmt->close();
+      $_SESSION['message'] = "We're sorry, but you can only complete this HIT survey once. This IP Address completed the survey on ".$worker_data['visit_date'].".";
+      unset($ip_address, $query, $worker_data);
+      header("location: ./error.php");
+      exit;
+    }
 
     //Set worker data into the table
     $resultSet->free();
