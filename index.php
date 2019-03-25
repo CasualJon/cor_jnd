@@ -39,7 +39,7 @@
       $worker_data = $resultSet->fetch_assoc();
       $resultSet->free();
       $ip_stmt->close();
-      $_SESSION['message'] = "We're sorry, but you can only complete this HIT survey once. This IP Address completed the survey on ".$worker_data['visit_date'].".";
+      $_SESSION['message'] = "We're sorry, but you can only complete this HIT survey once. This IP Address accessed the survey on ".$worker_data['visit_date'].".";
       unset($ip_address, $query, $worker_data);
       header("location: ./error.php");
       exit;
