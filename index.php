@@ -57,7 +57,6 @@
     $ip_stmt->execute();
 
     //Retrieve the interal identifier set into the worker table from last action
-//TODO - remove start time check (used only for testing b/c IP addresses not unique)
     $query = "SELECT internal_identifier FROM workers WHERE ip_address=? AND start_time=?";
     $ip_stmt->prepare($query);
     $ip_stmt->bind_param("ss", $ip_address, $curr_time);
