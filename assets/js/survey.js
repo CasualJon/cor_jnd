@@ -36,7 +36,6 @@ var interval = setInterval(function() {
 //Get the information to load onto the survey page from the server
 fetchSurveyControl();
 
-
 //Update the view based on check input
 $(".image-checkbox").on("click", function (e) {
   $(this).toggleClass('image-checkbox-checked');
@@ -92,11 +91,13 @@ $(".image-checkbox").on("click", function (e) {
   evalConidentSelect();
 });
 
+
 //completeTimer()
 function completeTimer() {
   timerDone = true;
   evalContinueButton()
 } //END completeTimer()
+
 
 //evalConidentSelect()
 function evalConidentSelect() {
@@ -109,6 +110,7 @@ function evalConidentSelect() {
   }
   evalContinueButton();
 } //END evalConidentSelect()
+
 
 //setConfidence()
 function setConfidence(opt) {
@@ -125,6 +127,7 @@ function setConfidence(opt) {
   evalContinueButton();
 } //END setConfidence()
 
+
 //evalContinueButton()
 function evalContinueButton() {
   if (timerDone && choiceMade && confidenceSelected) {
@@ -138,7 +141,6 @@ function evalContinueButton() {
 } //END evalContinueButton()
 
 
-//-------------------------------------------------------------------------------
 //fetchSurveyControl()
 //Function to make an Ajax call to a php file that will pull data from the
 //server via ./support_php_files/sql_interact.php
