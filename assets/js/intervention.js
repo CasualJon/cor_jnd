@@ -84,8 +84,9 @@ $(".image-checkbox").on("click", function (e) {
   }
 
   e.preventDefault();
-  evalConidentSelect();
+  evalConfidentSelect();
 });
+
 
 //completeTimer()
 function completeTimer() {
@@ -93,8 +94,9 @@ function completeTimer() {
   evalContinueButton()
 } //END completeTimer()
 
-//evalConidentSelect()
-function evalConidentSelect() {
+
+//evalConfidentSelect()
+function evalConfidentSelect() {
   var confidentSelect = document.getElementById("confident_select");
   if (choiceMade) {
     confidentSelect.setAttribute("style", "");
@@ -103,7 +105,7 @@ function evalConidentSelect() {
     confidentSelect.setAttribute("style", "display: none");
   }
   evalContinueButton();
-} //END evalConidentSelect()
+} //END evalConfidentSelect()
 
 //setConfidence()
 function setConfidence(opt) {
@@ -119,6 +121,7 @@ function setConfidence(opt) {
   confidenceSelected = true;
   evalContinueButton();
 } //END setConfidence()
+
 
 //evalContinueButton()
 function evalContinueButton() {

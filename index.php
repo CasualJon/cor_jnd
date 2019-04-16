@@ -142,7 +142,8 @@
 
             <p>
               Before the experiment begins you will be given a definition of
-              correlation and 5 practice questions with feedback.
+              correlation and 5 practice questions with feedback. During the
+              actual trial, the data sets will only be visible for 10 seconds.
             </p><br>
 
             <p>

@@ -26,6 +26,8 @@ var continueButton = document.getElementById('continue_button');
 $(document).ready(function(){
   //Require at least 4 seconds (4,000ms) of time on the education screen
   setTimeout(completeTimer, 4000);
+  //Only allow chart options to display for ~10 seconds before replacing
+  setTimeout(toggleChartVisibility, 10000);
 });
 
 var seconds = 0;
@@ -88,7 +90,7 @@ $(".image-checkbox").on("click", function (e) {
   }
 
   e.preventDefault();
-  evalConidentSelect();
+  evalConfidentSelect();
 });
 
 
@@ -99,8 +101,20 @@ function completeTimer() {
 } //END completeTimer()
 
 
-//evalConidentSelect()
-function evalConidentSelect() {
+//toggleChartVisibility()
+function toggleChartVisibility() {
+  var left = document.getElementById("opt_a");
+  left.setAttribute("src", "./assets/img/examples/timeout/placeholder_a.png");
+  left.setAttribute("width", imgWidth);
+
+  var right = document.getElementById("opt_b");
+  right.setAttribute("src", "./assets/img/examples/timeout/placeholder_b.png");
+  right.setAttribute("width", imgWidth);
+} //END toggleChartVisibility()
+
+
+//evalConfidentSelect()
+function evalConfidentSelect() {
   var confidentSelect = document.getElementById("confident_select");
   if (choiceMade) {
     confidentSelect.setAttribute("style", "");
@@ -109,7 +123,7 @@ function evalConidentSelect() {
     confidentSelect.setAttribute("style", "display: none");
   }
   evalContinueButton();
-} //END evalConidentSelect()
+} //END evalConfidentSelect()
 
 
 //setConfidence()
