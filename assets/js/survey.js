@@ -24,8 +24,8 @@ var continueButton = document.getElementById('continue_button');
 
 //Make a file-wide var to hold the Begin Button element
 $(document).ready(function(){
-  //Require at least 4 seconds (4,000ms) of time on the education screen
-  setTimeout(completeTimer, 4000);
+  //Require at least 3 seconds (3,000ms) of time on the education screen
+  setTimeout(completeTimer, 3000);
   //Only allow chart options to display for ~10 seconds before replacing
   setTimeout(toggleChartVisibility, 10000);
 });
