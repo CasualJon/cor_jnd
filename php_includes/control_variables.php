@@ -1,12 +1,12 @@
 <?php
   //Database informaiton for mysqli access
-  $db_name = "cor_jnd_1";
+  $db_name = "cor_jnd_2";
   $db_user = "phpmyadmin";
   $db_pass = "westdayton";
 
   //Directory information for the images the classifier/user will evaluate
   $img_source = "./assets/img/trial/";
-  $num_questions = 27;
+  $num_questions = 30;
 
   //Intervention config: whether/when to show. 0 = before start, 12 = before 13
   $intervention_trigger = true;
