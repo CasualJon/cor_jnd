@@ -128,6 +128,12 @@
               for all groups of data can be described by the line y = x.  You will
               need to select the graph in which you think the points are most
               highly correlated.
+            </p><br />
+
+            <p>
+              Note that during the actual trial, the set of
+              scatter plots used in each question will only display for 10 seconds
+              though you will still be able to make your selection after this time.
             </p><br>
 
             <p>
@@ -147,7 +153,7 @@
             </p><br>
 
             <p>
-              During this 10-15 minute experiment, <b><i>do not</i></b> click
+              During this 8-12 minute experiment, <b><i>do not</i></b> click
               the back button on your browser - it will not allow you to change
               your responses questions.
             </p>
@@ -222,8 +228,8 @@
 
         <p>
           <u>WILL I BE COMPENSATED FOR MY PARTICIPATION?</u><br />
-          You will receive $1.50 for participating in this study. We expect the
-          study to take at most 15 minutes.
+          You will receive $1.20 for participating in this study. We expect the
+          study to take at most 12 minutes.
         </p>
 
         <p>
