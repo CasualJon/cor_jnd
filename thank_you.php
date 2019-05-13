@@ -13,8 +13,8 @@
     $q2 = false;
     $engaged = 0;
     $data = "".$_SESSION['internal_identifier'].",";
-    //Given new difficulty, removing 109 pair from engagement check... $_SESSION['engagement'][0] == 1 && 
-    if ($_SESSION['engagement'][1] == 1 && $_SESSION['engagement'][2] == 1) {
+    //Given new difficulty, removing 109 pair from engagement check... $_SESSION['engagement'][0] == 1 &&
+    if ($_SESSION['engagement'][0] == 1 && $_SESSION['engagement'][1] == 1 && $_SESSION['engagement'][2] == 1) {
       $engaged = 1;
       $data .= "1,";
     }
