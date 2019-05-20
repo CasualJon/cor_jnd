@@ -1,6 +1,6 @@
 <?php
   //Database informaiton for mysqli access
-  $db_name = "cor_jnd_3test";
+  $db_name = "cor_jnd_3";
   $db_user = "phpmyadmin";
   $db_pass = "westdayton";
 
@@ -13,7 +13,7 @@
   $intervention_count = 0;
 
   //Engagement check string data
-  $engagement_string_check = ["09", "9ah"];
+  $engagement_string_check = ["09", "9ah", "9bh", "9ch"];
 
   //Max allowable survey time in seconds (3600 = 60 min)
   $max_allowed_time = 3600;
