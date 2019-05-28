@@ -1,6 +1,6 @@
 <?php
   //Database informaiton for mysqli access
-  $db_name = "cor_jnd_3";
+  $db_name = "cor_jnd_5";
   $db_user = "phpmyadmin";
   $db_pass = "westdayton";
 
