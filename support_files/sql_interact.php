@@ -74,8 +74,8 @@
               strpos($_SESSION['exp_data'][$_SESSION['survey']['curr_question']][$choice], $engagement_string_check[2]) !== FALSE ||
               strpos($_SESSION['exp_data'][$_SESSION['survey']['curr_question']][$choice], $engagement_string_check[3]) !== FALSE) {
 
-            if (strpos($_SESSION['exp_data'][$_SESSION['survey']['curr_question']][$choice], "_x309a") !== FALSE) $_SESSION['engagement'][0] = $usr_correct;
-            else if (strpos($_SESSION['exp_data'][$_SESSION['survey']['curr_question']][$choice], "_x309b") !== FALSE) $_SESSION['engagement'][1] = $usr_correct;
+            if (strpos($_SESSION['exp_data'][$_SESSION['survey']['curr_question']][$choice], "_x109a") !== FALSE) $_SESSION['engagement'][0] = $usr_correct;
+            else if (strpos($_SESSION['exp_data'][$_SESSION['survey']['curr_question']][$choice], "_x109b") !== FALSE) $_SESSION['engagement'][1] = $usr_correct;
             else $_SESSION['engagement'][2] = $usr_correct;
           }
         }
