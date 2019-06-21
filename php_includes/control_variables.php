@@ -1,8 +1,8 @@
 <?php
   //Database informaiton for mysqli access
-  $db_name = "cor_jnd_6c";
-  $db_user = "phpmyadmin";
-  $db_pass = "westdayton";
+  $db_name = "";
+  $db_user = "";
+  $db_pass = "";
 
   //Directory information for the images the classifier/user will evaluate
   $img_source = "./assets/img/trial/";

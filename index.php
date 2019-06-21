@@ -170,8 +170,8 @@
         <br />
 
         <h6 style="display: inline">Title of the Study: </h6><p>Human Understanding of Machine Learning Models</p>
-        <h6 style="display: inline">Principal Investigator: </h6><p>Dr. Michael Gleicher (phone: (608) 263-2874)</p>
-        <h6 style="display: inline">Student Researcher: </h6><p>Alex Spicer (lab phone (608) 265-2711)</p>
+        <h6 style="display: inline">Principal Investigator: </h6><p></p>
+        <h6 style="display: inline">Student Researcher: </h6><p></p>
 
         <p>
           <u>DESCRIPTION OF THE RESEARCH</u><br />
@@ -247,16 +247,16 @@
         <p>
           <u>WHOM SHOULD I CONTACT IF I HAVE QUESTIONS?</u><br />
           You may ask any questions about the research at any time by e-mailing
-          the owner of the HIT or by calling the laboratory at (608) 265-2711.
+          the owner of the HIT or by calling the laboratory at.
           If you wish to escalate your issue, you may contact the Principal
-          Investigator Dr. Michael Gleicher at (608) 263-2874.
+          Investigator.
         </p>
 
         <p>
           If you are not satisfied with response of research team, have more questions,
           or want to talk with someone about your rights as a research participant,
           you are encouraged to contact the Education and Social/Behavioral Science
-          IRB Office at the University of Wisconsin-Madison at (608) 263-2320.
+          IRB Office at the University of Wisconsin-Madison at...
         </p>
 
         <p>

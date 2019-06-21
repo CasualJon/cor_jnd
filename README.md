@@ -1,2 +1,2 @@
 # cor_jnd
-Correlation &amp; Just Noticable Difference Experiments
+Correlation &amp; Just Noticeable Difference Experiments
